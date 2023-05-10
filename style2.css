@@ -1,0 +1,46 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: linear-gradient(rgb(60,60,100),black);
+  text-align: center;
+  font-family: Ubuntu, sans-serif;
+  color: white;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: rgb(200,200,200);
+}
+
+#nextQuestionBtn {
+  font-size: 16px;
+  padding: 8px 16px;
+  margin-top: 25px;
+  background-color: black;
+  color: white;
+}
+
+#nextQuestionBtn:hover {
+  background-color: green;
+  color: white;
+}
+
+#countdown {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
