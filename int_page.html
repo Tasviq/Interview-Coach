@@ -3,16 +3,54 @@
 
 <head>
   <link href="style2.css" rel="stylesheet" type="text/css" />
-  <h1 class="heading">Interview</h1>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f9f9f9;
+    }
+    .container {
+      text-align: center;
+    }
+    .interview-heading {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffffff;
+      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    }
+    #timer {
+      font-size: 20px;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #videoElement {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 640px;
+    }
+  </style>
 </head>
 
 <body>
-  <!-- Webcam -->
-  <video id="videoElement" autoplay></video>
-  <div id="timer"><span id="countdown">5</span></div>
-  <button id="nextQuestionBtn" style="display:none;">Next Question</button>
-  <script src="interview.js"></script>
+  <div class="container">
+    <h1 class="interview-heading">Interview</h1>
+    <!-- Webcam -->
+    <video id="videoElement" autoplay></video>
+    <div id="timer">
+      <span id="countdown">5</span>
+    </div>
+    <button id="nextQuestionBtn" class="btn btn-primary mt-3" style="display:none;">Next Question</button>
+  </div>
 
+  <script src="interview.js"></script>
 </body>
 
 </html>
