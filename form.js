@@ -1,12 +1,10 @@
-// add event listener to button
-document.getElementById("submitButton").addEventListener("click", function() {
-  const interviewType = document.querySelector('input[name="type"]:checked').value;
+// Add event listener to button using jQuery
+$("#submitButton").click(function() {
+  const interviewType = $('input[name="type"]:checked').val();
+  const numQuestions = $('#dropdown1').val();
 
-  const numQuestions = document.querySelector('#dropdown1').value;
-
-  // store interview type in local storage
   localStorage.setItem("interviewType", interviewType);
 
-  // navigate to new page
+  // Navigate to new page
   window.location.href = "int_page.html";
 });
